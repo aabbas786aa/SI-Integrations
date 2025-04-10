@@ -1,6 +1,9 @@
 import os
-# Set backend for headless environments via environment variable before any matplotlib imports
-os.environ["MPLBACKEND"] = "agg"
+try:
+    os.environ["MPLBACKEND"] = "agg"
+except Exception as e:
+    # Log the error and proceed; this avoids a fatal error if setting the backend fails.
+    print("Warning: Unable to set MPLBACKEND environment variable:", e)
 
 import streamlit as st
 import pandas as pd
