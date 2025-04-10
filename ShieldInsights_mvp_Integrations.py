@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-matplotlib.use('Agg')  # Set non-interactive backend for headless environments
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
@@ -9,6 +8,7 @@ from datetime import datetime, timedelta
 import matplotlib as mpl
 from io import BytesIO
 import streamlit.components.v1 as components
+
 
 # ------------------ Theme Toggle ------------------
 theme_option = st.sidebar.radio("Choose Theme", ["Dark", "Light"])
