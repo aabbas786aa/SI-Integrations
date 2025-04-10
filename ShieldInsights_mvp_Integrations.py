@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+matplotlib.use('Agg')  # Set non-interactive backend for headless environments
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
