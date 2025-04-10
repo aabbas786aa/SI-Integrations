@@ -1,3 +1,7 @@
+import os
+# Set backend for headless environments via environment variable before any matplotlib imports
+os.environ["MPLBACKEND"] = "agg"
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,7 +12,6 @@ from datetime import datetime, timedelta
 import matplotlib as mpl
 from io import BytesIO
 import streamlit.components.v1 as components
-
 
 # ------------------ Theme Toggle ------------------
 theme_option = st.sidebar.radio("Choose Theme", ["Dark", "Light"])
