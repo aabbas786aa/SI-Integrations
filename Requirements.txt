@@ -1,7 +1,8 @@
-streamlit>=1.0.0
-pandas>=1.0.0
-matplotlib>=3.0.0
-seaborn>=0.11.0
-plotly>=5.0.0
-openpyxl>=3.0.0      # For reading Excel files
-XlsxWriter>=1.0.0    # For writing Excel files
+streamlit
+pandas
+matplotlib
+seaborn
+plotly
+openpyxl     # For reading Excel files
+XlsxWriter    # For writing Excel files
+random
