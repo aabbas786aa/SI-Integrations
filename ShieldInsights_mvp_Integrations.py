@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-import matplotlib
+from datetime import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
-import random
-from datetime import datetime, timedelta
 import matplotlib as mpl
+import io
+import random
+import plotly.express as px
 from io import BytesIO
 import streamlit.components.v1 as components
 
