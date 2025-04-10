@@ -1,10 +1,3 @@
-import os
-try:
-    os.environ["MPLBACKEND"] = "agg"
-except Exception as e:
-    # Log the error and proceed; this avoids a fatal error if setting the backend fails.
-    print("Warning: Unable to set MPLBACKEND environment variable:", e)
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -185,7 +178,7 @@ def simulate_integrations_data():
 integration_mode = st.sidebar.radio("Select Integration Mode:", 
     ["RISK Cognizance API (Current MVP)", "Simulated Integrations (CrowdStrike, Okta, Splunk)"])
 
-# ------------------ Main Dashboard Title & Page Config ------------------
+# ------------------ Main Dashboard Title ------------------
 st.set_page_config(layout="wide")
 st.title("ShieldInsights.ai – Real-Time Remediation Dashboard")
 
