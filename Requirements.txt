@@ -1,6 +1,7 @@
 streamlit
 pandas
 matplotlib
+matplotlib.pylot
 seaborn
 plotly
 openpyxl     # For reading Excel files
