@@ -9,10 +9,6 @@ import matplotlib as mpl
 from io import BytesIO
 import streamlit.components.v1 as components
 
-#streamlit cache clear
-#tasklist | findstr streamlit
-#taskkill /PID <PID> /F
-
 # ------------------ Theme Toggle ------------------
 theme_option = st.sidebar.radio("Choose Theme", ["Dark", "Light"])
 if theme_option == "Light":
@@ -182,7 +178,7 @@ def simulate_integrations_data():
 integration_mode = st.sidebar.radio("Select Integration Mode:", 
     ["RISK Cognizance API (Current MVP)", "Simulated Integrations (CrowdStrike, Okta, Splunk)"])
 
-# ------------------ Main Dashboard Title ------------------
+# ------------------ Main Dashboard Title & Page Config ------------------
 st.set_page_config(layout="wide")
 st.title("ShieldInsights.ai – Real-Time Remediation Dashboard")
 
@@ -378,3 +374,5 @@ else:
         st.markdown("### Summary of AI Insights")
         for idx, row in integrated_data.iterrows():
             st.markdown(f"**Event {row['event_id']} ({row['tool']})**: {row['ai_insight']}")
+
+
