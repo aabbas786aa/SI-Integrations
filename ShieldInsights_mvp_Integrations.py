@@ -9,6 +9,10 @@ import matplotlib as mpl
 from io import BytesIO
 import streamlit.components.v1 as components
 
+streamlit cache clear
+tasklist | findstr streamlit
+taskkill /PID <PID> /F
+
 # ------------------ Theme Toggle ------------------
 theme_option = st.sidebar.radio("Choose Theme", ["Dark", "Light"])
 if theme_option == "Light":
